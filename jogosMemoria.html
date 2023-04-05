@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/jogosMemoria.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>JOGOS DE MEMORIA</title>
+</head>
+<body>
+    
+    <!-- Pantalla inicial -->
+    <div id="pantalla-inicial">
+        <p>JOGO DA MEMORIA</p><br><br>
+        <button class="btn" onclick="comenzarJuego()">COMEÇAR A JOGAR</button><br><br>
+        <a href="JogosLibras.html">
+        <button class="btn">VOLTA</button></a>
+    </div>
+
+    <div id="display-container">
+    <!-- Pantalla juego -->
+        <div class="pantalla-juego" id="pantalla-juego">
+             <div class="score">Pontuação: <span>0</span></div>
+             <p>JOGOS DE MEMORIA</p>
+          <div class="tela">
+           <div class="container">
+            <div class="cell">
+                <div class="front" data-index="1"><img src="img/A1.png" alt=""></div>
+                <div class="back"></div>
+            </div>
+            <div class="cell">
+                <div class="front" data-index="1"><img src="img/A01.png" alt=""></div>
+                <div class="back"></div>
+            </div>
+            <div class="cell">
+                <div class="front" data-index="2"><img src="img/B2.png" alt=""></div>
+                <div class="back"></div>
+            </div>
+            <div class="cell">
+                <div class="front" data-index="2"><img src="img/B02.png" alt=""></div>
+                <div class="back"></div>
+            </div>
+            <div class="cell">
+                <div class="front" data-index="3"><img src="img/D3.png" alt=""></div>
+                <div class="back"></div>
+            </div>
+            <div class="cell">
+                <div class="front" data-index="3"><img src="img/D03.png" alt=""></div>
+                <div class="back"></div>
+            </div>
+            <div class="cell">
+                <div class="front" data-index="4"><img src="img/E4.png" alt=""></div>
+                <div class="back"></div>
+            </div>
+            <div class="cell">
+                <div class="front" data-index="4"><img src="img/E04.png" alt=""></div>
+                <div class="back"></div>
+            </div>
+            <div class="cell">
+                <div class="front" data-index="5"><img src="img/F5.png" alt=""></div>
+                <div class="back"></div>
+            </div>
+            <div class="cell">
+                <div class="front" data-index="5"><img src="img/F05.png" alt=""></div>
+                <div class="back"></div>
+            </div>
+            <div class="cell">
+                <div class="front" data-index="6"><img src="img/G6.png" alt=""></div>
+                <div class="back"></div>
+            </div>
+            <div class="cell">
+                <div class="front" data-index="6"><img src="img/G06.png" alt=""></div>
+                <div class="back"></div>
+            </div>
+        </div>
+    </div><br>
+    <div id="pantalla-final">
+            <button class="bntVolto" onclick="volverAlInicio()"><b>VOLTAR AO INÍCIO</b></button>
+            <div><br>        
+    </div>
+   </div>     
+  </div>
+    <script src="JAVASCRIPT/jogosMemoria.js"></script>
+</body>
+</html>

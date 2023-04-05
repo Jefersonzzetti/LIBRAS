@@ -1,0 +1,146 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #0a69ed;
+}
+h1{
+    
+    background-color: #fff;
+    margin: 40px auto;
+    border-radius: 60px;
+    box-shadow: 5px 5px 0 #000;
+    padding: 20px 30px;
+}
+
+
+/* PANTALLA INICIO */
+#pantalla-inicial{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin: 60px 0;
+}
+button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0.5em 1.8em;
+  border-radius: 0.2em;
+  box-shadow: 0 5px 10px rgba(0,0,0,10.50);
+}
+
+
+
+/* PANTALLA juego */
+#pantalla-juego{
+    display: none;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+
+P{
+    color: #ffffff;
+
+}
+
+.bntVolto {
+   border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;;
+  padding: 0.5em 1.8em;
+  border-radius: 0.2em;
+  box-shadow: 0 5px 10px rgba(0,0,0,10.50);
+ 
+}
+
+.container {
+   background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,10.50);
+  max-width: 760px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1rem;
+  margin: auto;
+  padding: 20px;
+
+}
+
+.cell div {
+  height: 130px;
+  border-radius: 4px;
+
+}
+
+.cell {
+  position: relative;
+  cursor: pointer;
+}
+
+.front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #a6a6a6;
+  background-color: #fff;
+  transform: rotateY(90deg);
+}
+
+.back {
+  background-image: url('libras01.jpeg');
+
+}
+
+img {
+  height: 100px;
+  width: 100px;
+
+}
+
+.flip {
+  transform: rotateY(0deg);
+}
+.match {
+  transform: rotateY(0deg);
+}
+
+.show {
+  transform: rotateY(0deg);
+}
+
+@media screen and (min-width: 770px) {
+  .head {
+    max-width: 760px;
+  }
+
+  .container {
+    grid-template-columns: repeat(4, auto);
+  }
+
+  .cell div {
+    height: 170px;
+  }
+}
+
+.score{
+
+    color: #0a69ed;
+
+}
+
+
+
+
